@@ -6,7 +6,7 @@
 /public/bundles/
 
 # symfony/asset-mapper ###
-/public/assets/
+#/public/assets/
 /assets/vendor/
 
 # Cache and logs (Symfony2)
@@ -63,3 +63,6 @@
 
 # Embedded web-server pid file
 /.web-server-pid
+
+# Discard .wav
+*.wav
