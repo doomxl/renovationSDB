@@ -14899,10 +14899,10 @@ Sliding Text One
 }
 
 .events-two__date p {
-  font-size: 30px;
+  font-size: 20px;
   color: var(--eduvers-white);
   font-weight: 600;
-  line-height: 30px;
+  line-height: 20px;
 }
 
 .events-two__date span {
@@ -14924,7 +14924,8 @@ Sliding Text One
 
 .events-two__time {
   position: relative;
-  display: inline-flex;
+  /*display: inline-flex;*/
+  display: none;
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;

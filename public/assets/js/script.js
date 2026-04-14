@@ -965,7 +965,10 @@
     // Iterate through all <li> elements, including nested ones
     selector.find("li").each(function () {
       let anchor = $(this).find("a").first(); // Get the first <a> in the <li>
-      if (anchor.length && anchor.attr("href") === fileName) {
+
+      //alert('anchor.attr("href").substring(1) = ' + anchor.attr("href").substring(1) + ' fileName = ' + fileName);
+
+      if (anchor.length && anchor.attr("href").substring(1) === fileName) {
         $(this).addClass("current"); // Add 'current' to the matching <li>
         // Add 'current' to parent <li> if it exists (for dropdowns)
         let parentLi = $(this).closest("li.dropdown");
