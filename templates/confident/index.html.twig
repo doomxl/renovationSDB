@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Politique de confidentialité - Rénovation de Salle de Bain{% endblock %}
+
+{% block body %}
+    {{ include('partials/confident/_slider.html.twig') }}
+    {{ include('partials/confident/_confident.html.twig') }}   
+    {{ include('partials/confident/_cta.html.twig') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+        // _cta container overrides footer container        
+        document.querySelector('footer.site-footer-two')?.classList.add('site-footer-two-margin-top');
+    </script>
+{% endblock %}

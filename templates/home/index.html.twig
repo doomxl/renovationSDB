@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil - Rénovation de Salle de Bain{% endblock %}
+
+{% block body %}
+    {{ include('partials/index/_slider.html.twig') }}
+    {{ include('partials/index/_nos-prestations.html.twig') }}
+    {{ include('partials/index/_faq.html.twig') }}
+    {{ include('partials/index/_appointment.html.twig') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('assets/js/appointment.js') }}"></script>
+{% endblock %}

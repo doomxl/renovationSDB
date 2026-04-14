@@ -1,0 +1,264 @@
+<section class="rdv-section">
+    <div class="container">
+
+        <!-- En-tête style site -->
+        <div class="section-title-box">
+            <p class="sub-title">Rendez-vous personnalisé</p>
+            <h2>Fixez votre rendez-vous<br><span>en toute simplicité</span></h2>
+            <p>Un expert vous accueille à votre domicile pour évaluer votre projet de rénovation et vous proposer une solution adaptée.</p>
+        </div>
+
+        <!-- Stepper -->
+        <div class="rdv-stepper" id="stepper">
+            <div class="step-item active" data-step="1">
+                <div class="step-bubble">1</div>
+                <span class="step-label">Votre projet</span>
+            </div>
+            <div class="step-item" data-step="2">
+                <div class="step-bubble">2</div>
+                <span class="step-label">Surface & budget</span>
+            </div>
+            <div class="step-item" data-step="3">
+                <div class="step-bubble">3</div>
+                <span class="step-label">Date & heure</span>
+            </div>
+            <div class="step-item" data-step="4">
+                <div class="step-bubble">4</div>
+                <span class="step-label">Vos coordonnées</span>
+            </div>
+            <div class="step-item" data-step="5">
+                <div class="step-bubble">5</div>
+                <span class="step-label">Confirmation</span>
+            </div>
+        </div>
+
+        <!-- Carte formulaire -->
+        <div class="rdv-card">
+            <div class="rdv-card-body">
+
+                <!-- ====== ÉTAPE 1 : Type de projet ====== -->
+                <div class="step-panel active" id="panel-1">
+                    <p class="step-panel-title">Quel est votre projet ?</p>
+                    <p class="step-panel-subtitle">Sélectionnez le type de travaux souhaité.</p>
+                    <div class="choices-grid">
+                        <div class="choice-card" data-group="projet" data-val="Rénovation complète">
+                            <div class="check-mark"><i class="fas fa-check"></i></div>
+                            <div class="choice-icon"><i class="fas fa-shower"></i></div>
+                            <div class="choice-label">Rénovation complète</div>
+                        </div>
+                        <div class="choice-card" data-group="projet" data-val="Remplacement de baignoire">
+                            <div class="check-mark"><i class="fas fa-check"></i></div>
+                            <div class="choice-icon"><i class="fas fa-bath"></i></div>
+                            <div class="choice-label">Remplacement de baignoire</div>
+                        </div>
+                        <div class="choice-card" data-group="projet" data-val="Installation douche à l'italienne">
+                            <div class="check-mark"><i class="fas fa-check"></i></div>
+                            <div class="choice-icon"><i class="fas fa-water"></i></div>
+                            <div class="choice-label">Douche à l'italienne</div>
+                        </div>
+                        <div class="choice-card" data-group="projet" data-val="Carrelage & faïence">
+                            <div class="check-mark"><i class="fas fa-check"></i></div>
+                            <div class="choice-icon"><i class="fas fa-th-large"></i></div>
+                            <div class="choice-label">Carrelage & faïence</div>
+                        </div>
+                        <div class="choice-card" data-group="projet" data-val="Plomberie">
+                            <div class="check-mark"><i class="fas fa-check"></i></div>
+                            <div class="choice-icon"><i class="fas fa-wrench"></i></div>
+                            <div class="choice-label">Plomberie</div>
+                        </div>
+                        <div class="choice-card" data-group="projet" data-val="Autre projet">
+                            <div class="check-mark"><i class="fas fa-check"></i></div>
+                            <div class="choice-icon"><i class="fas fa-tools"></i></div>
+                            <div class="choice-label">Autre projet</div>
+                        </div>
+                    </div>
+                    <div class="btn-row">
+                        <span></span>
+                        <button class="thm-btn" onclick="nextStep(1)">
+                            <span>Continuer</span><span class="fas fa-arrow-right"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ====== ÉTAPE 2 : Surface & budget ====== -->
+                <div class="step-panel" id="panel-2">
+                    <p class="step-panel-title">Surface et budget estimé</p>
+                    <p class="step-panel-subtitle">Ces informations nous permettent de préparer au mieux notre visite.</p>
+
+                    <div style="margin-bottom: 24px;">
+                        <p style="font-family: var(--thm-font-alt); font-size: 13px; font-weight: 700; color: var(--thm-primary); margin-bottom: 12px;">Surface de la salle de bain :</p>
+                        <div class="choices-grid" style="grid-template-columns: repeat(4, 1fr);">
+                            <div class="choice-card" data-group="surface" data-val="< 4 m²">
+                                <div class="check-mark"><i class="fas fa-check"></i></div>
+                                <div class="choice-icon" style="font-size: 20px;">*</div>
+                                <div class="choice-label">< 4 m²</div>
+                            </div>
+                            <div class="choice-card" data-group="surface" data-val="4 – 7 m²">
+                                <div class="check-mark"><i class="fas fa-check"></i></div>
+                                <div class="choice-icon" style="font-size: 20px;">**</div>
+                                <div class="choice-label">4 – 7 m²</div>
+                            </div>
+                            <div class="choice-card" data-group="surface" data-val="7 – 12 m²">
+                                <div class="check-mark"><i class="fas fa-check"></i></div>
+                                <div class="choice-icon" style="font-size: 20px;">***</div>
+                                <div class="choice-label">7 – 12 m²</div>
+                            </div>
+                            <div class="choice-card" data-group="surface" data-val="> 12 m²">
+                                <div class="check-mark"><i class="fas fa-check"></i></div>
+                                <div class="choice-icon" style="font-size: 20px; font-weight: bold;">+</div>
+                                <div class="choice-label">> 12 m²</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p style="font-family: var(--thm-font-alt); font-size: 13px; font-weight: 700; color: var(--thm-primary); margin-bottom: 12px;">Budget prévisionnel :</p>
+                        <div class="choices-grid" style="grid-template-columns: repeat(3, 1fr);">
+                            <div class="choice-card" data-group="budget" data-val="< 5 000 €">
+                                <div class="check-mark"><i class="fas fa-check"></i></div>
+                                <div class="choice-icon"><i class="fas fa-piggy-bank"></i></div>
+                                <div class="choice-label">< 5 000 €</div>
+                            </div>
+                            <div class="choice-card" data-group="budget" data-val="5 000 – 15 000 €">
+                                <div class="check-mark"><i class="fas fa-check"></i></div>
+                                <div class="choice-icon"><i class="fas fa-coins"></i></div>
+                                <div class="choice-label">5 000 – 15 000 €</div>
+                            </div>
+                            <div class="choice-card" data-group="budget" data-val="> 15 000 €">
+                                <div class="check-mark"><i class="fas fa-check"></i></div>
+                                <div class="choice-icon"><i class="fas fa-gem"></i></div>
+                                <div class="choice-label">> 15 000 €</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-row">
+                        <button class="btn-back" onclick="prevStep(2)"><i class="fas fa-arrow-left"></i> Retour</button>
+                        <button class="thm-btn" onclick="nextStep(2)"><span>Continuer</span><span class="fas fa-arrow-right"></span></button>
+                    </div>
+                </div>
+
+                <!-- ====== ÉTAPE 3 : Calendrier ====== -->
+                <div class="step-panel" id="panel-3">
+                    <p class="step-panel-title">Choisissez une date et un créneau</p>
+                    <p class="step-panel-subtitle">Sélectionnez le jour qui vous convient, puis l'heure de passage de notre expert.</p>
+                    <div class="cal-wrapper">
+                        <!-- Calendrier -->
+                        <div>
+                            <div class="cal-box">
+                                <div class="cal-nav">
+                                    <button onclick="changeMonth(-1)"><i class="fas fa-chevron-left"></i></button>
+                                    <span class="cal-month" id="cal-month-label"></span>
+                                    <button onclick="changeMonth(1)"><i class="fas fa-chevron-right"></i></button>
+                                </div>
+                                <div class="cal-grid" id="cal-grid"></div>
+                            </div>
+                        </div>
+                        <!-- Créneaux -->
+                        <div class="slots-box">
+                            <h4><i class="fas fa-clock" style="color: var(--thm-secondary); margin-right: 6px;"></i>Créneaux disponibles</h4>
+                            <div id="slots-selected-date" style="font-size: 13px; color: var(--thm-base); margin-bottom: 12px; min-height: 18px;"></div>
+                            <div class="slots-grid">
+                                <div class="slot" data-slot="08:00 – 10:00">08:00 – 10:00</div>
+                                <div class="slot" data-slot="10:00 – 12:00">10:00 – 12:00</div>
+                                <div class="slot full" data-slot="12:00 – 14:00">12:00 – 14:00</div>
+                                <div class="slot" data-slot="14:00 – 16:00">14:00 – 16:00</div>
+                                <div class="slot" data-slot="16:00 – 18:00">16:00 – 18:00</div>
+                                <div class="slot full" data-slot="18:00 – 20:00">18:00 – 20:00</div>
+                            </div>
+                            <p class="slot-note"><i class="fas fa-info-circle" style="color: var(--thm-secondary);"></i> Les créneaux barrés sont déjà réservés.</p>
+                        </div>
+                    </div>
+                    <div class="btn-row">
+                        <button class="btn-back" onclick="prevStep(3)"><i class="fas fa-arrow-left"></i> Retour</button>
+                        <button class="thm-btn" onclick="nextStep(3)"><span>Continuer</span><span class="fas fa-arrow-right"></span></button>
+                    </div>
+                </div>
+
+                <!-- ====== ÉTAPE 4 : Coordonnées ====== -->
+                <div class="step-panel" id="panel-4">
+                    <p class="step-panel-title">Vos coordonnées</p>
+                    <p class="step-panel-subtitle">Ces informations sont strictement confidentielles et uniquement utilisées pour votre rendez-vous.</p>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Prénom <span class="req">*</span></label>
+                            <input type="text" id="f-prenom" placeholder="Votre prénom">
+                        </div>
+                        <div class="form-group">
+                            <label>Nom <span class="req">*</span></label>
+                            <input type="text" id="f-nom" placeholder="Votre nom">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Téléphone <span class="req">*</span></label>
+                            <input type="tel" id="f-tel" placeholder="06 00 00 00 00">
+                        </div>
+                        <div class="form-group">
+                            <label>Email <span class="req">*</span></label>
+                            <input type="email" id="f-email" placeholder="votre@email.com">
+                        </div>
+                    </div>
+                    <div class="form-row full">
+                        <div class="form-group">
+                            <label>Adresse du chantier <span class="req">*</span></label>
+                            <input type="text" id="f-adresse" placeholder="Numéro, rue, ville, code postal">
+                        </div>
+                    </div>
+                    <div class="form-row full">
+                        <div class="form-group">
+                            <label>Message complémentaire</label>
+                            <textarea id="f-message" placeholder="Précisions sur votre projet, contraintes d'accès…"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="btn-row">
+                        <button class="btn-back" onclick="prevStep(4)"><i class="fas fa-arrow-left"></i> Retour</button>
+                        <button class="thm-btn" onclick="nextStep(4)"><span>Récapitulatif</span><span class="fas fa-arrow-right"></span></button>
+                    </div>
+                </div>
+
+                <!-- ====== ÉTAPE 5 : Confirmation ====== -->
+                <div class="step-panel" id="panel-5">
+                    <p class="step-panel-title">Récapitulatif de votre rendez-vous</p>
+                    <p class="step-panel-subtitle">Vérifiez les informations avant de valider votre prise de rendez-vous.</p>
+
+                    <div class="recap-grid" id="recap-grid">
+                        <!-- Rempli dynamiquement par JS -->
+                    </div>
+
+                    <div class="recap-notice">
+                        <i class="fas fa-shield-check" style="color: var(--thm-secondary); margin-right: 6px;"></i>
+                        La visite de notre expert est <strong>gratuite et sans engagement</strong>. Un devis détaillé vous sera remis à l'issue du rendez-vous.
+                    </div>
+
+                    <div class="btn-row">
+                        <button class="btn-back" onclick="prevStep(5)"><i class="fas fa-arrow-left"></i> Modifier</button>
+                        <button class="thm-btn btn-submit" onclick="submitRdv()">
+                            <span>Confirmer le rendez-vous</span><span class="fas fa-check"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ====== CONFIRMATION FINALE ====== -->
+                <div class="step-panel" id="panel-ok">
+                    <div class="confirm-box">
+                        <div class="confirm-icon"><i class="fas fa-check"></i></div>
+                        <h3>Rendez-vous confirmé !</h3>
+                        <p>Merci pour votre demande. Notre équipe va vous contacter dans les prochaines heures pour confirmer votre créneau. Un email de confirmation vous a été envoyé.</p>
+                        <a href="/" class="thm-btn">
+                            <span>Retour à l'accueil</span><span class="fas fa-home"></span>
+                        </a>
+                    </div>
+                </div>
+            </div><!-- /rdv-card-body -->
+        </div><!-- /rdv-card -->
+    </div>
+</section>
+
+<section class="booking-calendar">
+    <div id="calendar-grid"></div>
+    <div id="slots-selected-date"></div>
+    {# ... Reste du HTML pour les créneaux ... #}
+</section>

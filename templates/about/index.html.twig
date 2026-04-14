@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Qui sommes nous - Rénovation de Salle de Bain{% endblock %}
+
+{% block body %}
+    {{ include('partials/about/_slider.html.twig') }}
+    {{ include('partials/about/_presentation.html.twig') }}
+    {{ include('partials/about/_cta.html.twig') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+        // _cta container overrides footer container        
+        document.querySelector('footer.site-footer-two')?.classList.add('site-footer-two-margin-top');
+    </script>
+{% endblock %}
+
+

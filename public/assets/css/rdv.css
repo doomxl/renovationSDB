@@ -204,8 +204,12 @@
             transition: background .4s ease;
             z-index: 0;
         }
-        .step-item.done:not(:last-child)::after,
+        
         .step-item.active:not(:last-child)::after {
+            /*background: var(--thm-secondary);*/
+        }
+
+        .step-item.done:not(:last-child)::after {
             background: var(--thm-secondary);
         }
 
